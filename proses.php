@@ -1,23 +1,23 @@
 <?php
 if(isset($_POST['submit'])) {
-  $bil1 = $_POST['bil1'];
-  $bil2 = $_POST['bil2'];
-  $operasi = $_POST['operasi'];
+  $angka1 = $_POST['angka1'];
+  $angka2 = $_POST['angka2'];
+  $operator = $_POST['operator'];
 }
 
-if($operasi == +){
-  $hasil = $bil1 + $bil2;
-} elseif($operasi == +){
-  $hasil = $bil1 + $bil2;
-} elseif($operasi == -){
-  $hasil = $bil1 - $bil2;
-} elseif($operasi == *){
-  $hasil = $bil1 * $bil2;
-} elseif($operasi == /){
-  $hasil = $bil1 / $bil2;
+if($operator == +){
+  $hasil = $angka1 + $angka2;
+  echo "Hasil penjumlahan $angka1 + $bil2 = $hasil"
+} elseif($operator == -){
+  $hasil = $angka1 - $angka2;
+  echo "Hasil pengurangan $angka1 - $angka2 = $hasil"
+} elseif($operator == *){
+  $hasil = $angka1 * $angka2;
+  echo "Hasil perkalian $angka1 * $angka2 = $hasil"
+} elseif($operator == /){
+  $hasil = $angka1 / $angka2;
+  echo "Hasil pembagian $angka1 / $angka2 = $hasil"
 } else{
-  echo "Error";
+  echo "Operator aritmatika tidak dikenali";
 }
-
-echo "Hasil operasi aritmatik $bil1 + $bil2 = $hasil
 ?>
