@@ -1,1 +1,0 @@
-# 6701213029-PutriKamaliyahKiranaDewi-assessment1
